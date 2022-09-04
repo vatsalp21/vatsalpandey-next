@@ -1,0 +1,205 @@
+.main {
+  width: 90%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  justify-content: space-between;
+  margin-top: calc(20px + 1vw);
+  & > h1 {
+    font-size: calc(18px + 1vw);
+    font-weight: 400;
+    margin: 0px;
+  }
+}
+
+.heading {
+  font-weight: 400;
+  margin-top: calc(60px + 2vw);
+  font-size: calc(30px + 3vw);
+  max-width: 80%;
+  & {
+    @media only screen and (max-width: 768px){
+      max-width: 100%;
+    }
+  }
+}
+
+.sectionHeading {
+  font-size: calc(20px + 0.5vw);
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.sectionOne {
+  width: 100%;
+  & {
+    @media screen and (max-width: 600px) {
+      grid-template-columns: 80vw;
+    }
+  }
+}
+
+.firstSectionLeft { 
+  display: grid;
+  grid-row-gap: 10px;
+  align-content: baseline;
+}
+
+.bio {
+  grid-row: 1/2;
+  font-size: calc(10px + 1vw);
+  opacity: 70%;
+}
+
+.socials {
+  display: grid;
+  width: 25%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 12px;
+  @media screen and (max-width: 600px) {
+    width: 60%;
+  }
+}
+
+.socialIcons {
+  width: calc(20px + 2vw);
+  cursor: inherit;
+}
+.socialIcons:hover {
+  transform: scale(1.1);
+}
+.sectionOneImage {
+  grid-column: 2/3;
+}
+
+.contact {
+  margin-top: calc(10px + 1vw);
+  grid-row: 3/4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: .3s all;
+  border-radius: 3px;
+  font-family: 'Fira Code', monospace;
+  font-size: calc(9px + 0.5vw);
+  width: calc(200px + 2vw);
+  height: calc(40px + 1vw);
+  background: transparent;
+  cursor: inherit;
+}
+
+.sectionTwo {
+  margin-top: calc(50px + 3vw);
+  margin-bottom: 100px;
+}
+
+.projects {
+  justify-content: space-between;
+}
+
+.project {
+  display: flex;
+  font-size: calc(12px + 0.4vw);
+  width: 100%;
+  height: calc(50px + 3vw);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  transition: .3s linear;
+  & > p {
+    font-weight: 500;
+  }
+}
+
+.projectsLinks {
+  width: 45%;
+  & {
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}
+
+.sectionTwoImage {
+  width: calc(180px + 14vw);
+  margin-top: 5%;
+  @media screen and (max-width: 600px) {
+    width: 0%;
+    display: none;
+  }
+}
+
+.skillsParent {
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.skillSection {
+  width: 60%;
+  @media screen and (max-width: 900px) {
+    width: 85%;
+  }
+  @media screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.skillsGrid {
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  font-size: calc(10px + 0.5vw);
+  align-items: center;
+  @media screen and (max-width: 600px) {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.skillLevel {
+  height: calc(15px + 1vw);
+  background: linear-gradient(90deg, #FFDCDC 0%, #A8E0FF 100%);
+  border-radius: calc(4px + 0.2vw);
+  @media screen and (max-width: 600px) {
+    justify-self: flex-end;
+  }
+}
+
+.sectionThreeImage {
+  width: calc(180px + 14vw);
+  margin-top: 4%;
+  @media screen and (max-width: 900px) {
+    width: 0%;
+    display: none;
+  }
+}
+
+.themeSwitcher{
+  max-width: calc(15px + 0.5vw);
+  cursor: url('/cursor.png'), auto;
+}
+
+
+
+
+
+
+
+// Footer
+
+.footer {
+  margin-top: calc(15px + 1.5vw);
+}
+
+.footerOne {
+  font-size: calc(12px + 0.5vw);
+  font-weight: 600;
+}
+
+.footerTwo {
+  font-size: calc(6px + 0.5vw);
+  font-weight: 500;
+  opacity: 50%;
+}
