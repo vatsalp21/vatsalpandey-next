@@ -42,7 +42,7 @@ const Home = () => {
 
         <section className={styles.footer}>
           <p className={styles.footerOne}>© VATSAL PANDEY | {new Date().getFullYear()}</p>
-          <p className={styles.footerTwo}>DEVELOPED USING <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org">NEXT.JS</a> | DEPLOYED ON <a target="_blank" rel="noopener noreferrer" href="https://vercel.com">VERCEL</a></p>
+          <p className={styles.footerTwo}>DEVELOPED USING <a target="_blank" rel="noopener noreferrer" href="https://nextjs.org">NEXT.JS</a> | DEPLOYED ON <a target="_blank" rel="noopener noreferrer" href="https://www.netlify.com/">NETLIFY</a></p>
         </section>
 
       </main>
